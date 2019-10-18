@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import './ui/welcome_home.dart';
-import './ui/home.dart';
+import './ui/home_page.dart';
 
 void main() {
   runApp(new MaterialApp(
     
-    title: 'Layouts',
-    home: new Home(),
+    title: 'Scaffold',
+    home: new HomePage(),
   ));
 }
 
