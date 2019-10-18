@@ -6,22 +6,12 @@ class Home extends StatelessWidget {
     return Container(
       color: Colors.greenAccent,
       alignment: Alignment.center,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
+        alignment: Alignment.bottomCenter,
         children: <Widget>[
-          Text(
-            "Item 1",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 12),
-          ),
-          Text(
-            "Item 2",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 12),
-          ),
-          const Expanded(
-            child: const Text("Item 3"),
-          )
+          const Text('Hello'),
+          const Text("Hai!"),
+          const Text('Ou ye'),
         ],
       ),
     );
