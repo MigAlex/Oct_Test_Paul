@@ -40,6 +40,13 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => debugPrint("Sleepy button is pressed"),
+        backgroundColor: Colors.amber.shade300,
+        tooltip: 'Time for bed',
+        child: Icon(Icons.airline_seat_individual_suite),
+      ),
+
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
