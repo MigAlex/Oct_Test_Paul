@@ -35,10 +35,27 @@ class HomePage extends StatelessWidget {
             ),
             InkWell(
               child: Text('Thats a button'),
-              onTap: ()=> null,
+              onTap: () => null,
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add),
+            title: Text('Hey'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.print),
+            title: Text('Print it'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.mic),
+            title: Text('Record it'),
+          ),
+        ],
+        onTap: (int i) => debugPrint("You've tapped $i button"),
       ),
     );
   }
