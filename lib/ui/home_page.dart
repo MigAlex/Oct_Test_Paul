@@ -22,6 +22,24 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      backgroundColor: Colors.purpleAccent.shade100,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "GoalKeeper",
+              style: TextStyle(
+                  fontSize: 21, fontWeight: FontWeight.w400, color: Colors.red),
+            ),
+            InkWell(
+              child: Text('Thats a button'),
+              onTap: ()=> null,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
