@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.send),
             onPressed: null,
+            disabledColor: Colors.amber,
           ),
           IconButton(
             icon: Icon(Icons.search),
@@ -36,6 +37,7 @@ class HomePage extends StatelessWidget {
             InkWell(
               child: Text('Thats a button'),
               onTap: () => null,
+              highlightColor: Colors.blueGrey.shade200,
             ),
           ],
         ),
@@ -46,7 +48,6 @@ class HomePage extends StatelessWidget {
         tooltip: 'Time for bed',
         child: Icon(Icons.airline_seat_individual_suite),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
@@ -63,7 +64,11 @@ class HomePage extends StatelessWidget {
           ),
         ],
         onTap: (int i) => debugPrint("You've tapped $i button"),
+        backgroundColor: Colors.pinkAccent.shade400,
+        fixedColor: Colors.black,
+        unselectedItemColor: Colors.deepPurple,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
